@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "login": "ADMIN",
+      "password": "SenhaSecreta"
+    },
+    {
+      "id": 1,
+      "login": "Professor",
+      "password": "DevInHouseNDD"
+    }
+  ]
+}
