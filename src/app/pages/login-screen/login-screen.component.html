@@ -1,0 +1,51 @@
+<div class="d-flex" style="width: 100%" id="page">
+  <img
+    src="../../assets/imgs/login_img.png"
+    alt="login-img"
+    style="width: 50%"
+    class="img-fluid"
+  />
+  <div
+    class="d-flex flex-column align-itens-center justify-content-center"
+    style="width: 50%"
+  >
+    <div class="d-flex align-items-center flex-column">
+      <img src="../../assets/imgs/logo.png" alt="logo" />
+
+      <span id="welcome" class="mb-5">Seja bem vindo</span>
+
+      <form class="d-flex align-items-center flex-column" #login="ngForm">
+        <div class="login_item mb-3 d-flex">
+          <mat-icon>mail_outline</mat-icon>
+          <input
+            type="email"
+            name="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            placeholder="E-mail"
+            [(ngModel)]="email"
+            required
+          />
+        </div>
+
+        <div class="login_item mb-3 d-flex">
+          <mat-icon>lock_outline</mat-icon>
+          <input
+            type="password"
+            name="password"
+            placeholder="Senha"
+            [(ngModel)]="password"
+            required
+          />
+        </div>
+
+        <button
+          (click)="checkUserLogin()"
+          class="btn btn-primary login_item enter_button mt-3"
+          [disabled]="!login.form.valid"
+        >
+          Entrar
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

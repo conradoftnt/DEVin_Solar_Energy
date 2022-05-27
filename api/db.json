@@ -2,12 +2,12 @@
   "users": [
     {
       "id": 0,
-      "login": "ADMIN",
-      "password": "SenhaSecreta"
+      "email": "admin@admin.com",
+      "password": "admin"
     },
     {
       "id": 1,
-      "login": "Professor",
+      "email": "Professor@devin.com",
       "password": "DevInHouseNDD"
     }
   ]
