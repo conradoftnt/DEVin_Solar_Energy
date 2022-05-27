@@ -8,15 +8,20 @@ import { AppComponent } from './app.component';
 import { LoginScreenComponent } from './pages/login-screen/login-screen.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { Route, RouterModule } from '@angular/router';
+import { ContentComponent } from './pages/content/content.component';
 
 const ROUTES: Route[] = [
   {
-    path: '',
+    path: 'login',
     component: LoginScreenComponent,
+  },
+  {
+    path: 'content',
+    component: ContentComponent,
   },
 ];
 @NgModule({
-  declarations: [AppComponent, LoginScreenComponent],
+  declarations: [AppComponent, LoginScreenComponent, ContentComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
