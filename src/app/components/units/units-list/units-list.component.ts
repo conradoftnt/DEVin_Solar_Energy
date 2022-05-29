@@ -30,10 +30,6 @@ export class UnitsListComponent implements OnInit {
 
   deleteUnit(unitID: number | undefined) {
     this.data_base.deleteUnit(unitID).subscribe();
-    this.units.forEach((element, index) => {
-      if (element.id === unitID) {
-        this.units.splice(index);
-      }
-    });
+    this.units = this.units.filter((unit) => !(unit.id === unitID));
   }
 }

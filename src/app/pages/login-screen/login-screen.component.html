@@ -14,13 +14,17 @@
 
       <span id="welcome" class="mb-5">Seja bem vindo</span>
 
-      <form class="d-flex align-items-center flex-column" #login="ngForm">
+      <form
+        class="d-flex align-items-center flex-column"
+        #login="ngForm"
+        (ngSubmit)="checkUserLogin()"
+      >
         <div class="login_item mb-3 d-flex">
           <mat-icon>mail_outline</mat-icon>
           <input
             type="email"
             name="email"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,4}$"
             placeholder="E-mail"
             [(ngModel)]="email"
             required
@@ -39,7 +43,7 @@
         </div>
 
         <button
-          (click)="checkUserLogin()"
+          type="submit"
           class="btn btn-primary login_item enter_button mt-3"
           [disabled]="!login.form.valid"
         >

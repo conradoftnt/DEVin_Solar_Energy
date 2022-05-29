@@ -21,20 +21,12 @@
       "ativo": true
     },
     {
-      "id": 1562,
       "apelido": "Painel 2",
       "local": "Rua 15",
       "marca": "Risen",
-      "modelo": "100w",
-      "ativo": true
-    },
-    {
-      "id": 523,
-      "apelido": "Painel 3",
-      "local": "Rio de Janeiro",
-      "marca": "Hanwha",
-      "modelo": "200w",
-      "ativo": true
+      "modelo": "150w",
+      "ativo": true,
+      "id": 1562
     },
     {
       "apelido": "Painel 4",
@@ -46,27 +38,19 @@
     },
     {
       "apelido": "Painel 5",
-      "local": "Florianópolis",
-      "marca": "Shiny",
-      "modelo": "100w",
-      "ativo": false,
-      "id": 9524
+      "local": "Blumenau",
+      "marca": "Rumble",
+      "modelo": "200w",
+      "ativo": true,
+      "id": 9527
     },
     {
-      "apelido": "Painel 6",
-      "local": "Blumenau",
-      "marca": "Horse",
+      "apelido": "Painel 3",
+      "local": "Florianópolis",
+      "marca": "Hanwha",
       "modelo": "200w",
       "ativo": false,
-      "id": 9525
-    },
-    {
-      "apelido": "Painel 7",
-      "local": "Itapema",
-      "marca": "Rumble",
-      "modelo": "150w",
-      "ativo": true,
-      "id": 9526
+      "id": 9528
     }
   ],
   "geracoes": [
@@ -77,16 +61,16 @@
       "id": 1
     },
     {
-      "unitSurname": "Painel 3",
-      "month_year": "2022-06",
-      "kw_generated": 150,
-      "id": 2
-    },
-    {
       "unitSurname": "Painel 4",
       "month_year": "2022-08",
       "kw_generated": 200,
       "id": 3
+    },
+    {
+      "unitSurname": "Painel 5",
+      "month_year": "2021-08",
+      "kw_generated": 300,
+      "id": 4
     }
   ],
   "unitToEdit": {

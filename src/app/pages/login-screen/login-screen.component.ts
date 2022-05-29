@@ -13,23 +13,26 @@ import { Observable } from 'rxjs';
 export class LoginScreenComponent implements OnInit {
   email: string = '';
   password: string = '';
-  users: User[] = [];
 
   constructor(private data_base: DataBaseService, private route: Router) {}
 
   checkUserLogin() {
     this.data_base.checkUser().subscribe((result: User[]) => {
-      this.users = result;
+      result.forEach((verifyUser) => {
+        console.log(
+          verifyUser.email,
+          this.email,
+          verifyUser.password,
+          this.password
+        );
+        if (
+          verifyUser.email === this.email &&
+          verifyUser.password === this.password
+        ) {
+          this.route.navigateByUrl('/content/dashboard/total');
+        }
+      });
     });
-
-    for (let verifyUser of this.users) {
-      if (
-        verifyUser.email == this.email &&
-        verifyUser.password == this.password
-      ) {
-        this.route.navigateByUrl('/content/dashboard/total');
-      }
-    }
   }
 
   ngOnInit(): void {}
