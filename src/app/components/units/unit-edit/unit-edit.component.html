@@ -1,0 +1,64 @@
+<div class="container">
+  <h3 class="mb-5">Edição de Unidade Geradora</h3>
+  <div>
+    <form action="" class="d-flex flex-column" #newUnit="ngForm">
+      <label for="apelido_input" class="form-label">Apelido</label>
+      <input
+        type="text"
+        id="apelido_input"
+        name="apelido_input"
+        class="form-control"
+        [(ngModel)]="unit_edit.apelido"
+        required
+      />
+
+      <label for="local_input" class="form-label">Local</label>
+      <input
+        type="text"
+        id="local_input"
+        name="local_input"
+        class="form-control"
+        [(ngModel)]="unit_edit.local"
+        required
+      />
+
+      <label for="marca_input" class="form-label">Marca</label>
+      <input
+        type="text"
+        id="marca_input"
+        name="marca_input"
+        class="form-control"
+        [(ngModel)]="unit_edit.marca"
+        required
+      />
+
+      <label for="modelo_input" class="form-label">Modelo</label>
+      <input
+        type="string"
+        id="modelo_input"
+        name="modelo_input"
+        class="form-control"
+        [(ngModel)]="unit_edit.modelo"
+        required
+      />
+
+      <div class="my-3 mb-4">
+        <input
+          type="checkbox"
+          name="ativo_checkbox"
+          id="ativo_checkbox"
+          class="my-3 me-3 ms-1"
+          [(ngModel)]="unit_edit.ativo"
+        />
+        <span><b>Ativo</b></span>
+      </div>
+      <button
+        (click)="updateUnit()"
+        class="btn btn-primary mt-3"
+        [disabled]="!newUnit.form.valid"
+      >
+        Salvar
+      </button>
+    </form>
+  </div>
+</div>

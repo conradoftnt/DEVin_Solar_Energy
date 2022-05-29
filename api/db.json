@@ -37,12 +37,12 @@
       "ativo": true
     },
     {
-      "id": 9523,
       "apelido": "Painel 4",
       "local": "São Paulo",
       "marca": "Hanwha",
-      "modelo": "100w",
-      "ativo": true
+      "modelo": "150w",
+      "ativo": false,
+      "id": 9523
     },
     {
       "apelido": "Painel 5",
@@ -88,5 +88,8 @@
       "kw_generated": 200,
       "id": 3
     }
-  ]
+  ],
+  "unitToEdit": {
+    "value": 1562
+  }
 }

@@ -19,6 +19,7 @@ import { ActivatedUnitsComponent } from './components/dashboard/activated-units/
 import { DisabledUnitsComponent } from './components/dashboard/disabled-units/disabled-units.component';
 import { AverageEnergyComponent } from './components/dashboard/average-energy/average-energy.component';
 import { TotalUnitsComponent } from './components/dashboard/total-units/total-units.component';
+import { UnitEditComponent } from './components/units/unit-edit/unit-edit.component';
 
 const ROUTES: Route[] = [
   {
@@ -63,6 +64,10 @@ const ROUTES: Route[] = [
             path: 'new',
             component: UnitsNewComponent,
           },
+          {
+            path: 'edit',
+            component: UnitEditComponent,
+          },
         ],
       },
       {
@@ -86,6 +91,7 @@ const ROUTES: Route[] = [
     DisabledUnitsComponent,
     AverageEnergyComponent,
     TotalUnitsComponent,
+    UnitEditComponent,
   ],
   imports: [
     BrowserModule,

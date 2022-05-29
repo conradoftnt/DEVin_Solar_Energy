@@ -43,9 +43,7 @@ export class DashboardComponent implements OnInit {
     let total: number = 0;
     this.data_base.getGenerations().subscribe((result) => {
       result.forEach((generation) => {
-        console.log(generation);
         total += generation.kw_generated;
-        console.log(total);
       });
       this.avarage_energy = total;
     });

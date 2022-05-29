@@ -20,7 +20,11 @@
         <td>{{ item.marca }}</td>
         <td>{{ item.modelo }}</td>
         <td name="button_col">
-          <button type="button" class="btn btn-success btn_editar px-3">
+          <button
+            (click)="editUnit(item.id)"
+            type="button"
+            class="btn btn-success btn_editar px-3"
+          >
             <b>Editar</b>
           </button>
         </td>

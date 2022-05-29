@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Unit } from 'src/app/models/unit_interface';
 import { DataBaseService } from 'src/app/services/data-base.service';
 
@@ -8,7 +9,7 @@ import { DataBaseService } from 'src/app/services/data-base.service';
   styleUrls: ['./units-list.component.scss'],
 })
 export class UnitsListComponent implements OnInit {
-  constructor(private data_base: DataBaseService) {}
+  constructor(private data_base: DataBaseService, private route: Router) {}
 
   units: Unit[] = [];
 
@@ -20,6 +21,11 @@ export class UnitsListComponent implements OnInit {
     this.data_base.getUnits().subscribe((result) => {
       this.units = result;
     });
+  }
+
+  editUnit(unitID: number | undefined) {
+    this.data_base.saveUnitToEdit(unitID).subscribe();
+    this.route.navigateByUrl('/content/units/edit');
   }
 
   deleteUnit(unitID: number | undefined) {
