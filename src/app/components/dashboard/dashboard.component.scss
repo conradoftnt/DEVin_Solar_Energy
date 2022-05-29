@@ -1,0 +1,55 @@
+.tittle {
+  h2 {
+    font-family: Poppins;
+    color: #374557;
+    font-size: 36px;
+  }
+}
+
+.content {
+  width: 82vw;
+  height: 85vh;
+  background-color: #fafafa;
+}
+
+.counters {
+  padding: 4% 13% 3% 13%;
+}
+
+.graphic {
+  padding: 0% 20%;
+  .card {
+    background-color: #ffffff;
+    h3 {
+      font-family: Roboto;
+      font-size: 20px;
+      letter-spacing: 0.15px;
+    }
+  }
+}
+
+.card {
+  font-family: Mulish;
+  border-radius: 8px;
+  .card-title {
+    font-size: 19px;
+    letter-spacing: 0.4px;
+    color: #9fa2b4;
+  }
+  .card-body {
+    font-size: 40px;
+    letter-spacing: 1px;
+  }
+}
+
+.click {
+  cursor: pointer;
+}
+
+.active {
+  border: 1px solid #3751ff;
+  color: #3751ff;
+  .card-title {
+    color: #3751ff;
+  }
+}

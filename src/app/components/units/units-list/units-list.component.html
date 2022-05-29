@@ -1,0 +1,46 @@
+<div class="container">
+  <h3 class="mb-5"><b>Lista de unidades</b></h3>
+  <table class="table shadow">
+    <thead class="table-light">
+      <tr>
+        <th scope="col" class="id">ID</th>
+        <th scope="col" class="apelido">Apelido</th>
+        <th scope="col" class="local">Local</th>
+        <th scope="col" class="marca">Marca</th>
+        <th scope="col" class="modelo">Modelo</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of units">
+        <td scope="row">{{ item.id }}</td>
+        <td>{{ item.apelido }}</td>
+        <td>{{ item.local }}</td>
+        <td>{{ item.marca }}</td>
+        <td>{{ item.modelo }}</td>
+        <td name="button_col">
+          <button type="button" class="btn btn-success btn_editar px-3">
+            <b>Editar</b>
+          </button>
+        </td>
+        <td name="button_col">
+          <button
+            (click)="deleteUnit(item.id)"
+            type="button"
+            class="btn btn-danger btn_remover"
+          >
+            <b>Remover</b>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button
+    type="button"
+    class="btn btn-primary new_unit mt-5"
+    routerLink="/content/units/new"
+  >
+    Nova unidade
+  </button>
+</div>

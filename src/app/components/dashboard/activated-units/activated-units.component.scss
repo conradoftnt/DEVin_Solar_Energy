@@ -1,0 +1,22 @@
+h3 {
+  font-family: Roboto;
+  font-size: 20px;
+  letter-spacing: 0.15px;
+}
+
+table {
+  font-family: Raleway;
+  font-size: 16px;
+  border-collapse: unset;
+  thead {
+    font-weight: 700;
+    font-style: bold;
+  }
+  tbody {
+    font-weight: 400;
+    background-color: #ffffff;
+    td {
+      border: none;
+    }
+  }
+}

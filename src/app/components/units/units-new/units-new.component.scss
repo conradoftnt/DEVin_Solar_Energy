@@ -1,0 +1,52 @@
+.container {
+  padding-top: 5%;
+  margin-left: 4%;
+  h3 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 28px;
+    color: #374557;
+    font-style: bold;
+  }
+  form {
+    label {
+      font-family: Raleway;
+      font-weight: 700;
+      font-size: 24px;
+      color: #53575d;
+      margin-bottom: 16px;
+    }
+    input {
+      font-family: Raleway;
+      font-weight: 400;
+      font-size: 24px;
+      color: #53575d;
+      width: 40%;
+      margin-bottom: 16px;
+    }
+    input[type="checkbox"] {
+      width: 2%;
+      transform: scale(2);
+      border: 1px;
+    }
+    button {
+      padding: 16px 24px;
+      width: 252px;
+      background: #4c5df1;
+      box-shadow: 0px 20px 50px rgba(55, 69, 87, 0.1);
+      border-radius: 20px;
+      font-family: Poppins;
+      font-size: 18px;
+      color: #ffffff;
+    }
+  }
+}
+
+#apelido_input {
+  width: 20%;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}

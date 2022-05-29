@@ -1,0 +1,61 @@
+.tittle {
+  h2 {
+    font-family: Poppins;
+    color: #374557;
+    font-size: 36px;
+  }
+}
+
+.content {
+  width: 82vw;
+  height: 85vh;
+  background-color: #fafafa;
+  form {
+    padding-left: 13%;
+    padding-top: 10%;
+    label {
+      font-family: Raleway;
+      font-size: 32px;
+      color: #53575d;
+      margin-bottom: 8px;
+    }
+    select {
+      background-color: #fbfcff;
+      border-color: #53575d;
+      width: 290px;
+      margin-bottom: 16px;
+    }
+    input {
+      width: 206px;
+      background-color: #fbfcff;
+      border-color: #53575d;
+      text-align: left;
+      margin-bottom: 16px;
+    }
+    input[type="number"] {
+      width: 290px;
+    }
+    :focus {
+      outline: none;
+    }
+    button {
+      font-family: Poppins;
+      font-size: 18px;
+      background-color: #4c5df1;
+      text-align: left;
+      border-radius: 20px;
+      width: 252px;
+      margin-top: 30px;
+    }
+  }
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.form-select:focus {
+  outline: none;
+  box-shadow: none;
+}

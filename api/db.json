@@ -10,5 +10,83 @@
       "email": "Professor@devin.com",
       "password": "DevInHouseNDD"
     }
+  ],
+  "unidades": [
+    {
+      "id": 156,
+      "apelido": "Painel 1",
+      "local": "Rua 5",
+      "marca": "Canadian",
+      "modelo": "155w",
+      "ativo": true
+    },
+    {
+      "id": 1562,
+      "apelido": "Painel 2",
+      "local": "Rua 15",
+      "marca": "Risen",
+      "modelo": "100w",
+      "ativo": true
+    },
+    {
+      "id": 523,
+      "apelido": "Painel 3",
+      "local": "Rio de Janeiro",
+      "marca": "Hanwha",
+      "modelo": "200w",
+      "ativo": true
+    },
+    {
+      "id": 9523,
+      "apelido": "Painel 4",
+      "local": "São Paulo",
+      "marca": "Hanwha",
+      "modelo": "100w",
+      "ativo": true
+    },
+    {
+      "apelido": "Painel 5",
+      "local": "Florianópolis",
+      "marca": "Shiny",
+      "modelo": "100w",
+      "ativo": false,
+      "id": 9524
+    },
+    {
+      "apelido": "Painel 6",
+      "local": "Blumenau",
+      "marca": "Horse",
+      "modelo": "200w",
+      "ativo": false,
+      "id": 9525
+    },
+    {
+      "apelido": "Painel 7",
+      "local": "Itapema",
+      "marca": "Rumble",
+      "modelo": "150w",
+      "ativo": true,
+      "id": 9526
+    }
+  ],
+  "geracoes": [
+    {
+      "unitSurname": "Painel 1",
+      "month_year": "2022-03",
+      "kw_generated": 50,
+      "id": 1
+    },
+    {
+      "unitSurname": "Painel 3",
+      "month_year": "2022-06",
+      "kw_generated": 150,
+      "id": 2
+    },
+    {
+      "unitSurname": "Painel 4",
+      "month_year": "2022-08",
+      "kw_generated": 200,
+      "id": 3
+    }
   ]
 }

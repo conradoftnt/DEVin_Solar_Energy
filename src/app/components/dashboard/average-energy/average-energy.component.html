@@ -1,0 +1,21 @@
+<h3 class="m-4">Lista com todos os registros de gerações</h3>
+<div class="container">
+  <table class="table shadow">
+    <thead class="table-light">
+      <tr>
+        <th scope="col" class="id">ID</th>
+        <th scope="col" class="apelido">Apelido da unidade</th>
+        <th scope="col" class="local">Ano/Mês</th>
+        <th scope="col" class="marca">kw Gerado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of generations">
+        <td scope="row">{{ item.id }}</td>
+        <td>{{ item.unitSurname }}</td>
+        <td>{{ item.month_year }}</td>
+        <td>{{ item.kw_generated }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

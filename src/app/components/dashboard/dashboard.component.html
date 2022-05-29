@@ -1,0 +1,47 @@
+<div class="tittle">
+  <h2 class="ps-5 mt-5 mb-5"><b>Dashboard</b></h2>
+</div>
+<div class="content">
+  <div class="counters d-flex justify-content-evenly">
+    <div
+      [routerLink]="['/content/dashboard/total']"
+      routerLinkActive="active"
+      class="card text-center click"
+    >
+      <div class="card-title mx-5 mt-4 mb-0">Total unidades</div>
+      <div class="card-body pt-2 pb-4">{{ totalUnits }}</div>
+    </div>
+
+    <div
+      class="card text-center click"
+      [routerLink]="['/content/dashboard/actives']"
+      routerLinkActive="active"
+    >
+      <div class="card-title mx-5 mt-4 mb-0">Unidades Ativas</div>
+      <div class="card-body pt-2 pb-4">{{ activeUnits }}</div>
+    </div>
+
+    <div
+      class="card text-center click"
+      [routerLink]="['/content/dashboard/disabled']"
+      routerLinkActive="active"
+    >
+      <div class="card-title mx-5 mt-4 mb-0">Unidades inativas</div>
+      <div class="card-body pt-2 pb-4">{{ disableUnits }}</div>
+    </div>
+
+    <div
+      class="card text-center click"
+      [routerLink]="['/content/dashboard/avarage_energy']"
+      routerLinkActive="active"
+    >
+      <div class="card-title mx-5 mt-4 mb-0">Média de energia</div>
+      <div class="card-body pt-2 pb-4">{{ avarage_energy }} kw</div>
+    </div>
+  </div>
+  <div class="graphic">
+    <div class="card">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

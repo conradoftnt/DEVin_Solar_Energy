@@ -1,0 +1,26 @@
+<h3 class="m-4">Lista com o total de unidades registradas</h3>
+<div class="container">
+  <table class="table shadow">
+    <thead class="table-light">
+      <tr>
+        <th scope="col" class="id">ID</th>
+        <th scope="col" class="apelido">Apelido</th>
+        <th scope="col" class="local">Local</th>
+        <th scope="col" class="marca">Marca</th>
+        <th scope="col" class="modelo">Modelo</th>
+        <th scope="col" class="active">Ativo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of units">
+        <td scope="row">{{ item.id }}</td>
+        <td>{{ item.apelido }}</td>
+        <td>{{ item.local }}</td>
+        <td>{{ item.marca }}</td>
+        <td>{{ item.modelo }}</td>
+        <td *ngIf="item.ativo">&#9989;</td>
+        <td *ngIf="!item.ativo">&#9940;</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

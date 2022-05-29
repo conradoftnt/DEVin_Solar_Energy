@@ -1,3 +1,54 @@
-<div style="width: 18%">
-  <img src="../../../assets/imgs/logo_min.png" alt="logo" />
+<div class="d-flex" style="width: 100%">
+  <div style="width: 18%" class="nav_bar d-flex align-items-center flex-column">
+    <img src="../../../assets/imgs/logo_min.png" alt="logo" class="mt-4 mb-3" />
+    <ul
+      class="d-flex flex-column align-items-center ps-0 justify-content-center"
+    >
+      <li class="d-flex justify-content-center">
+        <button
+          class="btn btn-primary d-flex"
+          routerLink="/content/dashboard"
+          routerLinkActive="active"
+        >
+          <img
+            src="../../../assets/imgs/dashboard_icon.svg"
+            alt="dashboard_icon"
+            class="ms-2 mt-2 mb-2"
+          />
+          <span class="p-1 ms-3 mt-1">Dashboard</span>
+        </button>
+      </li>
+      <li class="d-flex justify-content-center mt-2">
+        <button
+          class="btn btn-primary d-flex"
+          routerLink="/content/units"
+          routerLinkActive="active"
+        >
+          <img
+            src="../../../assets/imgs/units_icon.svg"
+            alt="units_icon"
+            class="ms-2 mt-2 mb-2"
+          />
+          <span class="p-1 ms-3 mt-1">Unidades</span>
+        </button>
+      </li>
+      <li class="d-flex justify-content-center mt-2">
+        <button
+          class="btn btn-primary d-flex"
+          routerLink="/content/subscribe"
+          routerLinkActive="active"
+        >
+          <img
+            src="../../../assets/imgs/subscribe_icon.svg"
+            alt="subscribe_icon"
+            class="ms-2 mt-3 pt-1 mb-2"
+          />
+          <span class="p-1 ms-3 mt-1 text-start"
+            >Cadastro de energia gerada</span
+          >
+        </button>
+      </li>
+    </ul>
+  </div>
+  <router-outlet></router-outlet>
 </div>
