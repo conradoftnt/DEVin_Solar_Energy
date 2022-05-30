@@ -19,12 +19,6 @@ export class LoginScreenComponent implements OnInit {
   checkUserLogin() {
     this.data_base.checkUser().subscribe((result: User[]) => {
       result.forEach((verifyUser) => {
-        console.log(
-          verifyUser.email,
-          this.email,
-          verifyUser.password,
-          this.password
-        );
         if (
           verifyUser.email === this.email &&
           verifyUser.password === this.password
