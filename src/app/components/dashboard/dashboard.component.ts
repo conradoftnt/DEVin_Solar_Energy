@@ -45,7 +45,7 @@ export class DashboardComponent implements OnInit {
       result.forEach((generation) => {
         total += generation.kw_generated;
       });
-      this.avarage_energy = total;
+      this.avarage_energy = total / result.length;
     });
   }
 }

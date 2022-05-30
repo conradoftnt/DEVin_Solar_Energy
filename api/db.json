@@ -71,9 +71,15 @@
       "month_year": "2021-08",
       "kw_generated": 300,
       "id": 4
+    },
+    {
+      "unitSurname": "Painel 2",
+      "month_year": "2020-10",
+      "kw_generated": 220,
+      "id": 5
     }
   ],
   "unitToEdit": {
-    "value": 1562
+    "value": 9529
   }
 }
